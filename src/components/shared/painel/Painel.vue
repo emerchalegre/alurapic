@@ -14,7 +14,7 @@
                 <slot></slot>
             </div>
         </transition>
-
+    
     </div>
 </template>
 <script>
@@ -55,16 +55,17 @@ export default {
 }
 
 .painel-fade-enter,
-.painel-fade-leave-active
- {
+.painel-fade-leave-active {
     opacity: 0
 }
 
 
 .painel-fade-enter-active,
-.painel-fade-leave-active
- {
+.painel-fade-leave-active {
     transition: opacity .3s
 }
 
+.painel-conteudo {
+    overflow: hidden;
+}
 </style>

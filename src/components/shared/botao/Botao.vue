@@ -39,7 +39,6 @@ export default {
 
     computed: {
         estiloDoBotao() {
-            console.log(this.estilo);
             if(this.estilo == 'padrao') return 'botao-padrao';
             
             if (this.estilo == 'perigo') return 'botao-perigo';
@@ -48,22 +47,6 @@ export default {
 }
 </script>
 
-<style scoped>
-.botao {
-    display: inline-block;
-    padding: 10px;
-    border-radius: 3px;
-    margin: 10px;
-    font-size: 1.2em;
-}
-
-.botao-perigo {
-    background: firebrick;
-    color: white;
-}
-
-.botao-padrao {
-    background: darkcyan;
-    color: white;
-}
+<style scoped lang="sass">
+    @import "./Botao.scss";
 </style>
